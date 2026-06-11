@@ -34,22 +34,25 @@ Archivos del proyecto:
 
 ---
 
-## 3) ✉️ Cambiar el email del formulario (¡IMPORTANTE!)
+## 3) ✉️ Poner TUS datos en el formulario (¡OBLIGATORIO!)
 
-El formulario de pedidos envía los correos a un email. Ahora apunta al de Andrés — **cámbialo por el tuyo**.
+El formulario ya está listo, pero tiene **dos textos de ejemplo** que **debes** reemplazar por los tuyos.
+Abre **`index.html`** (en GitHub: clic en el archivo → lápiz ✏️) y, en la sección *Order*:
 
-1. Abre **`index.html`** (en GitHub puedes hacer clic en el archivo y el lápiz ✏️ para editar).
-2. Busca esta línea (sección *Order*):
+1. **Tu email.** Busca:
    ```html
-   <form class="order-form" action="https://formsubmit.co/andres.campuzano@icloud.com" method="POST">
+   <form class="order-form" action="https://formsubmit.co/TU-EMAIL@ejemplo.com" method="POST">
    ```
-3. Reemplaza `andres.campuzano@icloud.com` por **TU email**.
-4. (Recomendado) Unas líneas más abajo busca `name="_next"` y cambia la URL por la de **tu** página de gracias, ej:
+   y reemplaza `TU-EMAIL@ejemplo.com` por **tu email real**. (Aquí llegan los pedidos.)
+
+2. **La URL de tu página de gracias.** Unas líneas más abajo busca `name="_next"`:
    ```html
    <input type="hidden" name="_next" value="https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/thanks.html">
    ```
-   Si no lo cambias, después de un pedido te manda a la página de gracias de Andrés (funciona, pero mejor que sea la tuya).
-5. **Commit changes** para guardar.
+   y cambia esa URL por la de **tu** web (la de GitHub Pages del paso 2) **+ `/thanks.html`**.
+   Ejemplo: `https://maria.github.io/la-ronda/thanks.html`
+
+3. **Commit changes** para guardar.
 
 ## 4) ✅ Activar el formulario (recibir los pedidos)
 
@@ -82,6 +85,6 @@ Dentro de `index.html`, en la sección *Order*, hay **comentarios largos** (text
 - [ ] Subir los archivos a tu repo de GitHub
 - [ ] Activar GitHub Pages
 - [ ] Cambiar el email del formulario por el tuyo
-- [ ] (opcional) Cambiar la URL de `_next` a tu web
+- [ ] Cambiar la URL de `_next` a tu web
 - [ ] Enviar el formulario una vez y **confirmar el email**
 - [ ] (opcional) Borrar los comentarios largos del código
