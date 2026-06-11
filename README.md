@@ -32,13 +32,24 @@ Cambia lo que está **entre** las etiquetas. ¡No borres las `<p>` ni las `class
 
 En `style.css`, arriba de todo está la paleta (`:root`). Cambia el código de color (ej. `#a6743f`) y se actualiza en toda la página.
 
-## 📋 Poner el formulario de pedido (Google Form)
+## 📬 Formulario de pedido (FormSubmit.co)
 
-1. Entra a https://forms.google.com y crea tu formulario (campos: Name/이름, Phone/연락처, Email/이메일, Product/제품, Quantity/수량, Address/배송 주소, Message/요청사항).
-2. Arriba a la derecha: **Send (보내기)** → pestaña **`< >`** (Embed / 삽입).
-3. Copia el `<iframe>`.
-4. En `index.html` busca `===== CÓMO PONER TU GOOGLE FORM AQUÍ =====` (sección Order).
-5. Borra el bloque `.form-placeholder` y pega tu `<iframe>` ahí. Ponle `class="order-iframe"` para que se vea bonito.
+El formulario de la sección **Order** ya está hecho y se ve con el estilo de la marca.
+Envía los pedidos a tu email. **No necesita cuenta ni código de servidor.** Para activarlo:
+
+1. En `index.html`, sección Order, busca:
+   `action="https://formsubmit.co/CAMBIA-ESTO@gmail.com"`
+   y reemplaza `CAMBIA-ESTO@gmail.com` por **tu email real**.
+2. Sube el sitio a internet (Vercel) y **envía el formulario una vez** desde la página.
+3. FormSubmit te manda un email de confirmación → haz clic en el link. ✅ Desde ahí todos los pedidos llegan a tu correo.
+
+**🔒 Privacidad (recomendado):** ese email de confirmación incluye una *string aleatoria*
+(ej. `formsubmit.co/abc123xyz`). Reemplaza tu email en el `action` por esa string para que
+tu correo **no quede visible** en el código.
+
+**Página de gracias (opcional):** ya existe `thanks.html`. Después de subir el sitio, en
+`index.html` descomenta la línea `_next` y pon tu link, ej:
+`<input type="hidden" name="_next" value="https://TU-SITIO.vercel.app/thanks.html">`
 
 ## 🚀 Subir a internet (Vercel)
 

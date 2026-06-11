@@ -278,40 +278,69 @@
     </p>
 
     <!--
-    ================= CÓMO PONER TU GOOGLE FORM AQUÍ =================
-    1) Entra a https://forms.google.com y crea un formulario nuevo.
-       Campos sugeridos (puedes poner el título bilingüe):
-         - Name / 이름
-         - Phone Number / 연락처
-         - Email / 이메일
-         - Product / 제품 선택   (lista desplegable con:
-              Ceramic Mate Cup — ₩28,000
-              La Ronda Thermos — ₩36,000
-              Bombilla Set — ₩15,000
-              Yerba Mate Traditional — ₩18,000 )
-         - Quantity / 수량
-         - Delivery Address / 배송 주소
-         - Message / 요청사항
-    2) Arriba a la derecha clic en "Send" (보내기).
-    3) Elige la pestaña  < >  (Embed HTML / 삽입).
-    4) Copia el <iframe> que te da Google.
-    5) BORRA el bloque .form-placeholder de abajo y PEGA tu <iframe> en su lugar.
-       (deja la clase: <iframe class="order-iframe" src="..." ...></iframe> para que se vea bonito)
-    =================================================================
-    -->
-    <div class="order-form">
+    ================= FORMULARIO DE PEDIDO (FormSubmit.co) =================
+    Este formulario envía los pedidos a tu email. No necesita cuenta ni código de servidor.
 
-        <!-- 👇 BORRA esto cuando pegues tu Google Form -->
-        <div class="form-placeholder">
-            <p class="ph-title">📋 Order form goes here · 주문 폼이 들어갈 자리</p>
-            <p class="ph-sub">Pega aquí el iframe de tu Google Form (mira las instrucciones en el código).</p>
+    PARA ACTIVARLO:
+    1) Abajo, en  action="https://formsubmit.co/CAMBIA-ESTO@gmail.com"
+       reemplaza CAMBIA-ESTO@gmail.com por TU email real.
+    2) Sube el sitio a internet (Vercel) y envía el formulario UNA vez.
+    3) FormSubmit te manda un email para confirmar → haz clic en el link. ¡Listo!
+
+    PRIVACIDAD (opcional pero recomendado): ese mismo email de confirmación te da
+    una "string aleatoria" (ej: formsubmit.co/abc123xyz). Reemplaza tu email en el
+    action por esa string para que tu correo NO quede visible en el código. 🔒
+    =======================================================================
+    -->
+    <form class="order-form" action="https://formsubmit.co/andres.campuzano@icloud.com" method="POST">
+
+        <!-- ajustes de FormSubmit (campos ocultos, no se ven en la página) -->
+        <input type="hidden" name="_subject" value="New La Ronda order · 새 주문 🧉">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- trampa anti-spam: invisible para personas, los robots la rellenan y se bloquean -->
+        <input type="text" name="_honey" style="display:none">
+        <!-- después de subir a internet puedes mostrar tu propia página de gracias:
+        <input type="hidden" name="_next" value="https://TU-SITIO.vercel.app/thanks.html"> -->
+
+        <div class="form-row">
+            <label>Name · 이름
+                <input type="text" name="Name" placeholder="이름을 입력하세요" required>
+            </label>
+            <label>Phone Number · 연락처
+                <input type="tel" name="Phone" placeholder="010-0000-0000" required>
+            </label>
         </div>
 
-        <!-- 👇 EJEMPLO: descomenta esta línea y reemplaza el src con el de tu formulario
-        <iframe class="order-iframe" src="https://docs.google.com/forms/d/e/TU_FORM_ID/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading… 로드 중…</iframe>
-        -->
+        <label>Email · 이메일
+            <input type="email" name="Email" placeholder="you@email.com" required>
+        </label>
 
-    </div>
+        <div class="form-row">
+            <label>Product · 제품 선택
+                <select name="Product" required>
+                    <option value="">—</option>
+                    <option>Ceramic Mate Cup — ₩28,000</option>
+                    <option>La Ronda Thermos — ₩36,000</option>
+                    <option>Bombilla Set — ₩15,000</option>
+                    <option>Yerba Mate Traditional — ₩18,000</option>
+                </select>
+            </label>
+            <label>Quantity · 수량
+                <input type="number" name="Quantity" min="1" value="1" required>
+            </label>
+        </div>
+
+        <label>Delivery Address · 배송 주소
+            <input type="text" name="Address" placeholder="배송 주소를 입력하세요" required>
+        </label>
+
+        <label>Message · 요청사항
+            <textarea name="Message" rows="4" placeholder="요청사항이 있으면 적어주세요 (선택)"></textarea>
+        </label>
+
+        <button type="submit" class="btn-submit">Send Order Request · 주문 요청 보내기</button>
+    </form>
 
     <p class="confirm">
         Thank you for joining La Ronda. We will contact you soon to confirm your order.<br>
