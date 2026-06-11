@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ronda — Mate Shop</title>
+    <meta name="description" content="La Ronda — mate culture from the Río de la Plata to Korea. 리오 데 라 플라타에서 한국까지 이어지는 마테 문화.">
+
+    <!-- Google Fonts (embed). Gowun Batang = títulos / Noto Sans KR = texto. Soportan inglés + coreano. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+    <a href="#home" class="logo">
+        <img src="images/logo.png" alt="La Ronda logo">
+    </a>
+
+    <!-- botón hamburguesa (solo se ve en celular) -->
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <ul id="navLinks">
+        <li><a href="#home">Home<span class="kr-nav">홈</span></a></li>
+        <li><a href="#products">Products<span class="kr-nav">제품</span></a></li>
+        <li><a href="#about">About<span class="kr-nav">소개</span></a></li>
+        <li><a href="#how">How to Mate<span class="kr-nav">마시는 법</span></a></li>
+        <li><a href="#order" class="nav-cta">Order<span class="kr-nav">주문</span></a></li>
+    </ul>
+</nav>
+
+
+<!-- ============ HERO (Home) ============ -->
+<header class="hero" id="home">
+    <div class="hero-overlay">
+        <p class="small-title">LA RONDA</p>
+        <h1>Share the circle of mate</h1>
+        <p class="hero-kr">리오 데 라 플라타에서 한국까지,<br>마테의 따뜻한 문화를 함께 나눕니다.</p>
+
+        <p class="hero-description en">
+            Discover yerba mate through simple, beautiful, and beginner-friendly essentials.
+            La Ronda brings the ritual of mate to Korea for everyday energy, comfort, and connection.
+        </p>
+        <p class="hero-description kr">
+            처음 마테를 접하는 사람도 쉽게 시작할 수 있도록,
+            La Ronda는 따뜻하고 자연스러운 마테 제품을 제안합니다.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn first">Start Your Ronda</a>
+            <a href="#order" class="btn second">Order by Form · 주문</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+    <div class="two-col">
+        <div class="two-col-text">
+            <h2>About La Ronda</h2>
+            <p class="en">
+                La Ronda is a mate lifestyle brand created to share the culture of mate in Korea.
+                In the Río de la Plata, mate is passed from person to person as a symbol of friendship,
+                conversation, and everyday connection.
+                Our goal is to continue that circle in Korea with clean, warm, and easy-to-use products.
+            </p>
+            <p class="kr">
+                La Ronda는 한국에서 마테 문화를 소개하기 위해 만들어진 라이프스타일 브랜드입니다.
+                리오 데 라 플라타 지역에서 마테는 사람들 사이를 돌며 우정, 대화, 연결을 의미합니다.
+                La Ronda는 그 따뜻한 문화를 한국의 일상 속에서도 이어가고자 합니다.
+            </p>
+        </div>
+        <div class="two-col-img">
+            <img src="images/about.jpg" alt="Sharing mate together">
+        </div>
+    </div>
+
+    <!-- Brand concept -->
+    <div class="two-col reverse">
+        <div class="two-col-text">
+            <h3>The Endless Ronda</h3>
+            <p class="en">
+                Mate is not only a drink. It is a ritual of sharing.
+                La Ronda continues that circle from South America to Korea, inviting more people to
+                discover mate as part of a calm, natural, and connected lifestyle.
+            </p>
+            <p class="kr">
+                마테는 단순한 음료가 아닙니다. 함께 나누는 하나의 리추얼입니다.
+                La Ronda는 남미에서 시작된 마테의 원을 한국까지 이어가며, 더 많은 사람들이
+                자연스럽고 편안한 마테 문화를 경험할 수 있도록 합니다.
+            </p>
+        </div>
+        <div class="two-col-img">
+            <img src="images/concept.jpg" alt="Mate passed from hand to hand">
+        </div>
+    </div>
+</section>
+
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products">
+    <div class="section-head">
+        <h2>Products</h2>
+        <p class="kr-sub">마테를 시작하기 위한 기본 제품</p>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="card">
+            <div class="card-img"><img src="images/cup.jpg" alt="Ceramic Mate Cup"></div>
+            <h3>Ceramic Mate Cup</h3>
+            <p class="kr-name">세라믹 마테컵</p>
+            <p class="price">₩28,000</p>
+            <p class="en">A soft ivory ceramic mate cup with a warm wooden base, designed as La Ronda's signature product.</p>
+            <p class="kr">따뜻한 우드 베이스와 아이보리 세라믹이 어우러진 La Ronda의 시그니처 마테컵입니다.</p>
+            <a href="#order" class="card-link">Order · 주문하기</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+            <div class="card-img"><img src="images/thermos.jpg" alt="La Ronda Thermos"></div>
+            <h3>La Ronda Thermos</h3>
+            <p class="kr-name">라 론다 보온병</p>
+            <p class="price">₩36,000</p>
+            <p class="en">A clean white thermos with wooden details, made to keep water warm for your mate routine.</p>
+            <p class="kr">우드 디테일이 들어간 화이트 보온병으로, 마테를 위한 따뜻한 물을 오래 보관할 수 있습니다.</p>
+            <a href="#order" class="card-link">Order · 주문하기</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+            <div class="card-img"><img src="images/bombilla.jpg" alt="Bombilla Set"></div>
+            <h3>Bombilla Set</h3>
+            <p class="kr-name">봄비야 세트</p>
+            <p class="price">₩15,000</p>
+            <p class="en">A set of stainless steel bombillas for drinking mate in a traditional and reusable way.</p>
+            <p class="kr">전통적인 방식으로 마테를 마실 수 있는 재사용 가능한 스테인리스 봄비야 세트입니다.</p>
+            <a href="#order" class="card-link">Order · 주문하기</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card">
+            <div class="card-img"><img src="images/yerba.jpg" alt="Yerba Mate Traditional"></div>
+            <h3>Yerba Mate Traditional</h3>
+            <p class="kr-name">전통 예르바 마테</p>
+            <p class="price">₩18,000</p>
+            <p class="en">Traditional yerba mate with a smooth herbal profile, crafted for natural energy and daily balance.</p>
+            <p class="kr">부드러운 허브 풍미의 전통 예르바 마테로, 일상 속 자연스러운 에너지와 균형을 위해 제안합니다.</p>
+            <a href="#order" class="card-link">Order · 주문하기</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============ FEATURED PRODUCT DETAIL ============ -->
+<section id="featured">
+    <p class="small-title center">FEATURED PRODUCT · 추천 제품</p>
+    <div class="two-col">
+        <div class="two-col-img">
+            <img src="images/cup-detail.jpg" alt="Ceramic Mate Cup detail">
+        </div>
+        <div class="two-col-text">
+            <h2>Ceramic Mate Cup</h2>
+            <p class="kr-name">세라믹 마테컵</p>
+            <p class="en">
+                Our signature ceramic mate cup was designed to feel traditional, warm, and easy to use.
+                The rounded body follows the classic shape of mate, while the ivory ceramic and wooden base
+                give it a clean and modern look for everyday life in Korea.
+            </p>
+            <p class="kr">
+                La Ronda의 시그니처 세라믹 마테컵은 전통적인 마테의 형태를 바탕으로, 따뜻하고 편안하게
+                사용할 수 있도록 디자인되었습니다. 둥근 바디는 마테의 클래식한 느낌을 살리고,
+                아이보리 세라믹과 우드 베이스는 한국의 일상 공간에도 잘 어울리는 깨끗한 무드를 만듭니다.
+            </p>
+            <ul class="detail-points">
+                <li>Rounded ceramic body · 둥근 세라믹 바디</li>
+                <li>Warm wooden base · 따뜻한 우드 베이스</li>
+                <li>Soft ivory color · 부드러운 아이보리 컬러</li>
+                <li>Traditional mate-inspired shape · 전통 마테에서 영감을 받은 형태</li>
+                <li>Designed for daily use · 데일리 사용에 적합한 디자인</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============ HOW TO MATE ============ -->
+<section id="how">
+    <div class="section-head">
+        <h2>How to Mate</h2>
+        <p class="kr-sub">마테를 준비하는 간단한 방법</p>
+    </div>
+
+    <div class="steps">
+        <div class="step">
+            <span class="step-num">1</span>
+            <p class="en">Add yerba mate into the cup.</p>
+            <p class="kr">컵에 예르바 마테를 넣습니다.</p>
+        </div>
+        <div class="step">
+            <span class="step-num">2</span>
+            <p class="en">Tilt the cup slightly to create space on one side.</p>
+            <p class="kr">컵을 살짝 기울여 한쪽에 공간을 만듭니다.</p>
+        </div>
+        <div class="step">
+            <span class="step-num">3</span>
+            <p class="en">Add a small amount of warm water.</p>
+            <p class="kr">따뜻한 물을 조금 넣습니다.</p>
+        </div>
+        <div class="step">
+            <span class="step-num">4</span>
+            <p class="en">Place the bombilla into the yerba.</p>
+            <p class="kr">봄비야를 예르바 안에 넣습니다.</p>
+        </div>
+        <div class="step">
+            <span class="step-num">5</span>
+            <p class="en">Pour hot water and enjoy slowly.</p>
+            <p class="kr">뜨거운 물을 부어 천천히 즐깁니다.</p>
+        </div>
+    </div>
+
+    <p class="note">
+        ☕ Do not use boiling water. Mate is best prepared with hot water around 70–80°C.<br>
+        <span class="kr">끓는 물은 사용하지 않는 것이 좋습니다. 마테는 약 70–80°C의 따뜻한 물로 준비하는 것이 좋습니다.</span>
+    </p>
+</section>
+
+
+<!-- ============ ABOUT OUR YERBA MATE ============ -->
+<section id="yerba">
+    <div class="two-col">
+        <div class="two-col-text">
+            <h2>Natural Energy, Daily Balance</h2>
+            <p class="en">
+                Yerba mate contains natural caffeine and is often enjoyed as part of a daily wellness routine.
+                It may support alertness, digestion, and a light feeling after meals, making it a good option for
+                people who enjoy tea, herbal drinks, yoga, gym routines, or slow living.
+            </p>
+            <p class="kr">
+                예르바 마테에는 천연 카페인이 함유되어 있어 일상 속 웰니스 루틴으로 즐기기 좋습니다.
+                차, 허브 음료, 요가, 운동, 슬로우 라이프를 좋아하는 사람들에게 자연스러운 에너지와 편안한 루틴을 제안합니다.
+            </p>
+            <p class="disclaimer">
+                This product is a food item and is not intended to diagnose, treat, or cure any disease.<br>
+                <span class="kr">본 제품은 식품이며 질병의 진단, 치료 또는 예방을 위한 제품이 아닙니다.</span>
+            </p>
+        </div>
+        <div class="two-col-img">
+            <img src="images/yerba-about.jpg" alt="Yerba mate">
+        </div>
+    </div>
+</section>
+
+
+<!-- ============ ORDER ============ -->
+<section id="order">
+    <div class="section-head">
+        <h2>Order by Form</h2>
+        <p class="kr-sub">주문 정보를 남겨주시면 확인 후 연락드립니다.</p>
+    </div>
+
+    <p class="en center">
+        This is a simple order request form. Please choose your products and leave your contact and
+        delivery information. We will check your order and contact you for confirmation.
+    </p>
+    <p class="kr center">
+        간단한 주문 요청 폼입니다. 원하는 제품과 수량, 연락처 및 배송 정보를 남겨주세요.
+        주문 내용을 확인한 후 연락드리겠습니다.
+    </p>
+
+    <!--
+    ================= CÓMO PONER TU GOOGLE FORM AQUÍ =================
+    1) Entra a https://forms.google.com y crea un formulario nuevo.
+       Campos sugeridos (puedes poner el título bilingüe):
+         - Name / 이름
+         - Phone Number / 연락처
+         - Email / 이메일
+         - Product / 제품 선택   (lista desplegable con:
+              Ceramic Mate Cup — ₩28,000
+              La Ronda Thermos — ₩36,000
+              Bombilla Set — ₩15,000
+              Yerba Mate Traditional — ₩18,000 )
+         - Quantity / 수량
+         - Delivery Address / 배송 주소
+         - Message / 요청사항
+    2) Arriba a la derecha clic en "Send" (보내기).
+    3) Elige la pestaña  < >  (Embed HTML / 삽입).
+    4) Copia el <iframe> que te da Google.
+    5) BORRA el bloque .form-placeholder de abajo y PEGA tu <iframe> en su lugar.
+       (deja la clase: <iframe class="order-iframe" src="..." ...></iframe> para que se vea bonito)
+    =================================================================
+    -->
+    <div class="order-form">
+
+        <!-- 👇 BORRA esto cuando pegues tu Google Form -->
+        <div class="form-placeholder">
+            <p class="ph-title">📋 Order form goes here · 주문 폼이 들어갈 자리</p>
+            <p class="ph-sub">Pega aquí el iframe de tu Google Form (mira las instrucciones en el código).</p>
+        </div>
+
+        <!-- 👇 EJEMPLO: descomenta esta línea y reemplaza el src con el de tu formulario
+        <iframe class="order-iframe" src="https://docs.google.com/forms/d/e/TU_FORM_ID/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading… 로드 중…</iframe>
+        -->
+
+    </div>
+
+    <p class="confirm">
+        Thank you for joining La Ronda. We will contact you soon to confirm your order.<br>
+        <span class="kr">La Ronda에 함께해주셔서 감사합니다. 주문 확인을 위해 곧 연락드리겠습니다.</span>
+    </p>
+</section>
+
+
+<!-- ============ SHIPPING ============ -->
+<section id="shipping" class="shipping">
+    <h3>Shipping Info · 배송 안내</h3>
+    <p class="en">
+        Orders are available within Korea. Shipping usually takes 2–4 business days after order confirmation.
+        Delivery fees may vary depending on location and order size.
+    </p>
+    <p class="kr">
+        한국 내 배송이 가능합니다. 주문 확인 후 보통 2–4영업일 내 배송됩니다.
+        배송비는 지역과 주문 수량에 따라 달라질 수 있습니다.
+    </p>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer>
+    <img src="images/logo.png" alt="La Ronda" class="footer-logo">
+    <p class="footer-text en">Mate culture from the Río de la Plata to Korea.</p>
+    <p class="footer-text kr">리오 데 라 플라타에서 한국까지 이어지는 마테 문화.</p>
+
+    <div class="footer-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="#order">Order Form</a>
+        <a href="#shipping">Shipping Info</a>
+    </div>
+
+    <p class="copyright">© 2026 La Ronda. All rights reserved.</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
