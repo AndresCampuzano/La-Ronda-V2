@@ -152,7 +152,7 @@ nav.scrolled .logo img { height: 40px; }
     margin-top: 72px;                 /* deja pasar el nav fijo */
     min-height: 88vh;
     background: linear-gradient(rgba(61,44,29,0.45), rgba(61,44,29,0.55)),
-                url('images/hero.jpg') center/cover no-repeat;
+                url('https://flgwtpu6ecosr1ha.public.blob.vercel-storage.com/hero.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
